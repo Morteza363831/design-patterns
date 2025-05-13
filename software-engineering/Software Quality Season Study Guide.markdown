@@ -39,7 +39,15 @@
 
 **Visual: ADR Flow (Mermaid Diagram)**
 
-[![](https://mermaid.ink/img/pako:eNo9kctuwjAQRX_FmnVACQl5LSqVBCoWdNFWXdRhYSUDWBA79UOiRfx7HQP1yqNz7x175gKt7BBKaMReseFAPupGEHee6bpDYfjuh6y1trglk8kTWdAad1wgqaQweDbbm3jhYUU37IikxpZrLsWdVZ7VtJat7V0ieUOmpdB3XHu8pK_S-FSN3xZFiw--9HxFl0JbNSr64cSZE9z5yvMX-m6kw1yQT1Rjd_9CJU9bCGCveAfljp00BtCj6tlYw2VMaMAcsMcGSnftmDo2bhRXZxqY-JKyh9Io62xK2v3hUdihYwZrztzM-v9khaJDVUkrDJRxVPgMKC9wduUsnKZZGEd5GsbzaJ4G8DOKpsUsz_I4idIsycMkuwbw67uG0yKeF3kRZmkRp1GSOgd23P1yc1uY39v1D0L4iUU?type=png)](https://mermaid.live/edit#pako:eNo9kctuwjAQRX_FmnVACQl5LSqVBCoWdNFWXdRhYSUDWBA79UOiRfx7HQP1yqNz7x175gKt7BBKaMReseFAPupGEHee6bpDYfjuh6y1trglk8kTWdAad1wgqaQweDbbm3jhYUU37IikxpZrLsWdVZ7VtJat7V0ieUOmpdB3XHu8pK_S-FSN3xZFiw--9HxFl0JbNSr64cSZE9z5yvMX-m6kw1yQT1Rjd_9CJU9bCGCveAfljp00BtCj6tlYw2VMaMAcsMcGSnftmDo2bhRXZxqY-JKyh9Io62xK2v3hUdihYwZrztzM-v9khaJDVUkrDJRxVPgMKC9wduUsnKZZGEd5GsbzaJ4G8DOKpsUsz_I4idIsycMkuwbw67uG0yKeF3kRZmkRp1GSOgd23P1yc1uY39v1D0L4iUU)
+```mermaid
+graph TD
+    A[Identify Issue] --> B[Define Context]
+    B --> C[Make Decision]
+    C --> D[Document Reasons]
+    D --> E[Note Consequences]
+    E --> F[Ensure Compliance]
+    F --> G[Store in Version Control]
+```
 
 **Exam Tip**: Expect questions on trade-offs (e.g., “Why choose a shared database?”). Use ADRs to structure answers: context, decision, pros/cons.
 
@@ -99,7 +107,14 @@
 
 **Visual: TDD Flow (Mermaid)**
 
-[![](https://mermaid.ink/img/pako:eNpVkE1rwzAMhv9K0KmDNNh14iQ-DNqkuw3GKAzW9GBqNQlrPnAc2Bby3-e6LWX2xXrfR5KlCY6dQhBQtP9vqWVfebu8aD171vsPXRv0djiYg7dcPnubxYusz8PT1d84LbtRmS15uBqZM_LFmxwGvNO5E7f7dzzJo-n0jd06eQ0-lLpWIE7yPKAPDepGXmKYLlwBpsIGCxD2qaT-KuzfZ5vUy_az6xoQRo82TXdjWd2DsVfSYF5LO9aDwFahzrqxNSBo6CqAmOAbBFuRgMeE0YQTFtGI-_BjVRqkqyROWEh5HCYkjGcffl1PEqQsSpOUUhJGnHGe-ICqtsO9Xvfr1jz_AbTObF4?type=png)](https://mermaid.live/edit#pako:eNpVkE1rwzAMhv9K0KmDNNh14iQ-DNqkuw3GKAzW9GBqNQlrPnAc2Bby3-e6LWX2xXrfR5KlCY6dQhBQtP9vqWVfebu8aD171vsPXRv0djiYg7dcPnubxYusz8PT1d84LbtRmS15uBqZM_LFmxwGvNO5E7f7dzzJo-n0jd06eQ0-lLpWIE7yPKAPDepGXmKYLlwBpsIGCxD2qaT-KuzfZ5vUy_az6xoQRo82TXdjWd2DsVfSYF5LO9aDwFahzrqxNSBo6CqAmOAbBFuRgMeE0YQTFtGI-_BjVRqkqyROWEh5HCYkjGcffl1PEqQsSpOUUhJGnHGe-ICqtsO9Xvfr1jz_AbTObF4)
+```mermaid
+graph TD
+    A[Write Test] --> |Run Test | B(Fails)
+    B --> C[Write Code]
+    C --> |Run Test | D(Passes)
+    D --> E[Refactor]
+    E --> A
+```
 
 **Exam Tip**: Know XP practices like TDD and their impact on quality. For Agile questions, highlight how working software ensures quality over extensive documents.
 
