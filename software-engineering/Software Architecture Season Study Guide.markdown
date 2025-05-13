@@ -41,7 +41,12 @@
 
 **Visual: Pub/Sub Flow (Mermaid Diagram)**
 
-[![](https://mermaid.ink/img/pako:eNp1UEFugzAQ_Iq1ZxJBSMD4UKkJ7a1S1eRUyMGBLViNbWSbqjTk73VI0lv3tLOamdXMCSpdIzAoVWN415JdXiri57HY6N5YJG_YCOsMd0KrPZnNHsbX_nAUth3JutjpTlSM3KhPX6ic3V8N1hN32x9sZcQBR7IpnoXiqkKyHaxD-R8vL3JtpHDaDHcmBNAYUQP74EeLAUg0kl8wnC4mJbgWJZbA_Fpz81n6OGcv6rh611oCc6b3MqP7pr2Dvqu5w1xwn1v-ORtUNRqfRzlgEZ0sgJ3gG1i8COdJGsYRTcJ4Fa2SAAZ_jebZgqY0XkZJuqThMj0H8DM9DedZvMpoFsZ0kaRRGgDWl1gv18an4s-_USh6Mw?type=png)](https://mermaid.live/edit#pako:eNp1UEFugzAQ_Iq1ZxJBSMD4UKkJ7a1S1eRUyMGBLViNbWSbqjTk73VI0lv3tLOamdXMCSpdIzAoVWN415JdXiri57HY6N5YJG_YCOsMd0KrPZnNHsbX_nAUth3JutjpTlSM3KhPX6ic3V8N1hN32x9sZcQBR7IpnoXiqkKyHaxD-R8vL3JtpHDaDHcmBNAYUQP74EeLAUg0kl8wnC4mJbgWJZbA_Fpz81n6OGcv6rh611oCc6b3MqP7pr2Dvqu5w1xwn1v-ORtUNRqfRzlgEZ0sgJ3gG1i8COdJGsYRTcJ4Fa2SAAZ_jebZgqY0XkZJuqThMj0H8DM9DedZvMpoFsZ0kaRRGgDWl1gv18an4s-_USh6Mw)
+```mermaid
+graph TD
+    A[Course Registration] -->|Publish| B[Topic: Course Events]
+    B -->|Subscribe| C[Finance System]
+    B -->|Subscribe| D[Dormitory System]
+```
 
 **Exam Tip**: Know the difference between styles and patterns. For Pub/Sub questions, list benefits (e.g., decoupling) and concerns (e.g., message loss).
 
@@ -100,8 +105,12 @@
 - **Example**: Build a walking skeleton for a student system with a REST endpoint for course registration using Spring Boot.
 
 **Visual: Walking Skeleton Flow (Mermaid)**
-
-[![](https://mermaid.ink/img/pako:eNo9UMtug0AM_JWVz4Qu72UPlQL00EOlqsmpkMM2uIBaWGSWvlD-vRuS1ifb4xmPvcBR1wgSqqEhNbZsX1QDs7EtM9KfE9KBbTa3LCuf7nZ7tn28l-yGsOkmY6HLaLZO5GWuZ5qQ7ZA-uiNewXwFi7JQRr2oCQ_gQENdDfJVvU_oQI_Uq3MNy5lRgWmxxwqkTWtFb5W1drKkUQ3PWvcgDc2WRnpu2r9iHmtlsOiUvaH_VyYcaiTrajAgfX-VALnAF8jA526c8MATMQ8iL4od-LZdz019kYgg9OIkFDxMTg78rEu5mwZRKlLuhakQEU8SB7DujKaHy__WN55-AaKGZGo?type=png)](https://mermaid.live/edit#pako:eNo9UMtug0AM_JWVz4Qu72UPlQL00EOlqsmpkMM2uIBaWGSWvlD-vRuS1ifb4xmPvcBR1wgSqqEhNbZsX1QDs7EtM9KfE9KBbTa3LCuf7nZ7tn28l-yGsOkmY6HLaLZO5GWuZ5qQ7ZA-uiNewXwFi7JQRr2oCQ_gQENdDfJVvU_oQI_Uq3MNy5lRgWmxxwqkTWtFb5W1drKkUQ3PWvcgDc2WRnpu2r9iHmtlsOiUvaH_VyYcaiTrajAgfX-VALnAF8jA526c8MATMQ8iL4od-LZdz019kYgg9OIkFDxMTg78rEu5mwZRKlLuhakQEU8SB7DujKaHy__WN55-AaKGZGo)
+```mermaid
+graph TD
+    A[Browser] --> B[REST API: /register]
+    B --> C[Course Service]
+    C --> D[Database]
+```
 
 **Code Snippet (Spring Boot REST Endpoint)**
 
