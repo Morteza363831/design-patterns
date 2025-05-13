@@ -1,6 +1,4 @@
-# Software Quality Season Study Guide
-
-This guide covers key software quality concepts for your exam, focusing on quality attributes, architectural decisions, and documentation. It’s designed for quick learning, with visuals, examples, and exam tips.
+# Software Quality
 
 ## Section 1: Understanding Software Quality Attributes
 - **What Are Quality Attributes?**
