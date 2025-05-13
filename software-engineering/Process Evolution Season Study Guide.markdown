@@ -1,6 +1,4 @@
-# Process Evolution Season Study Guide
-
-This guide covers the evolution of software development processes for your exam, focusing on key methodologies from the 1950s to Agile, Scrum, and Extreme Programming (XP), as outlined in sections 2.1, 2.2.1, 2.2.2, 2.3.1, 2.3.2, 2.4, 2.5, 2.6, and 2.7. It’s designed for quick learning, with visuals, examples, and exam tips.
+# Process Evolution
 
 ## Section 2.1: Before Software Engineering (1950s-1960s)
 - **Overview** (p.1-2):
