@@ -1,6 +1,4 @@
-# Software Architecture Season Study Guide
-
-This guide covers key software architecture concepts for your exam, focusing on architectural styles, patterns, principles, modeling, and their role in development. It’s designed for quick learning, with visuals, examples, and exam tips.
+# Software Architecture
 
 ## Section 1: Architectural Styles
 - **What Are Architectural Styles?** (p.94-95)
